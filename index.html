@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Custom Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sign Up Form</title>
+    <script>
+      let submitted = false;
+    </script>
+    <iframe
+      style="display: none"
+      name="hiddenForm"
+      id="hiddenForm"
+      onload="if(submitted){window.location='./submit.html';}"
+    ></iframe>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <img src="./bg.gif" alt="background" />
+      <div class="label">
+        <h1>Sign Up</h1>
+      </div>
+      <div class="form">
+        <form
+          action="https://docs.google.com/forms/d/e/1FAIpQLScFnaZC3H5KN2rYEbyAy8y5aZVJDRZOPjsMueRPa18D7uN3WA/formResponse"
+          target="hiddenForm"
+          method="post"
+          onsubmit="submitted=true"
+        >
+          <label for="entry.958199301">Name</label>
+          <input
+            name="entry.958199301"
+            type="text"
+            required
+            placeholder="Your name"
+          />
+          <label for="entry.633730390">Email</label>
+          <input
+            name="entry.633730390"
+            type="email"
+            required
+            placeholder="Your email"
+          />
+          <label for="entry.949911860">Password</label>
+          <input
+            type="password"
+            name="entry.949911860"
+            required
+            placeholder="Password"
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
